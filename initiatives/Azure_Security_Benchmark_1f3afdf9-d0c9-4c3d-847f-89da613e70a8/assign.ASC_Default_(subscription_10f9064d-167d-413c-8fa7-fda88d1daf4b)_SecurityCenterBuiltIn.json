@@ -1,20 +1,28 @@
 {
  "sku": {
-  "name": "A1",
-  "tier": "Standard"
+  "name": "A0",
+  "tier": "Free"
  },
  "properties": {
   "displayName": "ASC Default (subscription: 10f9064d-167d-413c-8fa7-fda88d1daf4b)",
   "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
   "scope": "/subscriptions/10f9064d-167d-413c-8fa7-fda88d1daf4b",
-  "parameters": {},
+  "notScopes": [],
+  "parameters": {
+   "networkSecurityGroupsOnSubnetsMonitoringEffect": {
+    "value": "AuditIfNotExists"
+   }
+  },
   "description": "This is the default set of policies monitored by Azure Security Center. It was automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information please visit https://aka.ms/ascpolicies",
   "metadata": {
    "assignedBy": "Security Center",
+   "parameterScopes": {
+    "networkWatcherShouldBeEnabledListOfLocations": "/subscriptions/10f9064d-167d-413c-8fa7-fda88d1daf4b"
+   },
    "createdBy": "445ab463-2aa3-4ce5-aac3-fd865b94383b",
    "createdOn": "2019-10-17T19:33:16.6118768Z",
-   "updatedBy": null,
-   "updatedOn": null
+   "updatedBy": "207426ae-ed63-4086-a4b0-849c3ac0c872",
+   "updatedOn": "2021-04-19T06:17:53.6072105Z"
   },
   "enforcementMode": "Default"
  },
